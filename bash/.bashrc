@@ -5,6 +5,7 @@ HISTFILESIZE=10000
 
 # Homebrew-installed Bash completions
 for f in /usr/local/etc/bash_completion.d/*; do
+	# Only source things that aren't opensc, since that seems to be broken
     if [[ `readlink $f` != *"Cellar/opensc"* ]]; then
         source $f
     fi
@@ -19,6 +20,8 @@ PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ "'
 
 # General command aliases
 alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
+alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
+alias dnsflush='sudo killall -HUP mDNSResponder'
 
 # Yubikey aliases
 OPENSC_PKCS_LIB="/usr/local/lib/opensc.pkcs11.so"
