@@ -24,6 +24,13 @@ alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias st='open -a sourcetree'
 
+# pip / virtualenv interaction
+export PIP_REQUIRE_VIRTUALENV=true
+export SYSTEM_PIP=`which pip`
+syspip() {
+    PIP_REQUIRE_VIRTUALENV="" $SYSTEM_PIP "$@"
+}
+
 # Yubikey aliases
 OPENSC_PKCS_LIB="/usr/local/lib/opensc.pkcs11.so"
 alias yubi-add="ssh-add -l | grep $OPENSC_PKCS_LIB && ssh-add -e $OPENSC_PKCS_LIB; ssh-add -s $OPENSC_PKCS_LIB"
