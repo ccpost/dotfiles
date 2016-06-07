@@ -22,6 +22,7 @@ PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ "'
 alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
+alias st='open -a sourcetree'
 
 # Yubikey aliases
 OPENSC_PKCS_LIB="/usr/local/lib/opensc.pkcs11.so"
