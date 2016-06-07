@@ -5,7 +5,7 @@ HISTFILESIZE=10000
 
 # Homebrew-installed Bash completions
 for f in /usr/local/etc/bash_completion.d/*; do
-	# Only source things that aren't opensc, since that seems to be broken
+    # Only source things that aren't opensc, since that seems to be broken
     if [[ `readlink $f` != *"Cellar/opensc"* ]]; then
         source $f
     fi
