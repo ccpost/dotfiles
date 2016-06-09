@@ -23,6 +23,7 @@ alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias st='open -a sourcetree'
+alias finder='open -a finder'
 
 # pip / virtualenv interaction
 export PIP_REQUIRE_VIRTUALENV=true
