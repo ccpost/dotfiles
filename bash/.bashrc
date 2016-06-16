@@ -31,6 +31,11 @@ syspip() {
     PIP_REQUIRE_VIRTUALENV="" $SYSTEM_PIP "$@"
 }
 
+# virtualenvwrapper setup
+export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Yubikey aliases
 OPENSC_PKCS_LIB="/usr/local/lib/opensc.pkcs11.so"
 alias yubi-add="ssh-add -l | grep $OPENSC_PKCS_LIB && ssh-add -e $OPENSC_PKCS_LIB; ssh-add -s $OPENSC_PKCS_LIB"
