@@ -1,4 +1,8 @@
 {
-    // Use tabs instead of spaces for indentation
-    "translate_tabs_to_spaces": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"translate_tabs_to_spaces": true
 }
