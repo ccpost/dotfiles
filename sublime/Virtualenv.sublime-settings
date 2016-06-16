@@ -1,0 +1,5 @@
+{
+    // Override paths to use Homebrew's Python
+    "executable": "/usr/local/bin/virtualenv",
+    "extra_paths": ["/usr/local/bin"]
+}

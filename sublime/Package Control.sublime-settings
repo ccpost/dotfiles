@@ -7,7 +7,11 @@
 	[
 		"Anaconda",
 		"BracketHighlighter",
+		"DashDoc",
 		"GitGutter",
-		"Monokai Neue"
+		"Monokai Neue",
+		"Package Control",
+		"SublimeREPL",
+		"Virtualenv"
 	]
 }
