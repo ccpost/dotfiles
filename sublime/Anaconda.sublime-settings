@@ -1,3 +1,5 @@
 {
-    "anaconda_gutter_theme": "retina"
+    "anaconda_gutter_theme": "retina",
+    "complete_parameters": true,
+    "complete_all_parameters": true
 }
