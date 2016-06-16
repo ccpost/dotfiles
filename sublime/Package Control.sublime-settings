@@ -5,6 +5,9 @@
 	],
 	"installed_packages":
 	[
-		"Anaconda"
+		"Anaconda",
+		"BracketHighlighter",
+		"GitGutter",
+		"Monokai Neue"
 	]
 }
