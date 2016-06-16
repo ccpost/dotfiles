@@ -19,7 +19,6 @@ GIT_PS1_SHOWUPSTREAM="auto"
 PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ "'
 
 # General command aliases
-alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias st='open -a sourcetree'
