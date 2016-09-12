@@ -6,12 +6,15 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"AutoDocstring",
 		"BracketHighlighter",
 		"DashDoc",
 		"GitGutter",
 		"Monokai Neue",
 		"Package Control",
+		"Pretty JSON",
 		"SublimeREPL",
+		"Terraform",
 		"Virtualenv"
 	]
 }
