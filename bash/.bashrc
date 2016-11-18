@@ -23,6 +23,7 @@ alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias st='open -a sourcetree'
 alias finder='open -a finder'
+alias tf='terraform'
 
 # pip / virtualenv interaction
 export PIP_REQUIRE_VIRTUALENV=true
