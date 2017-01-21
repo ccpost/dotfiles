@@ -31,6 +31,10 @@ export SYSTEM_PIP=`which pip`
 syspip() {
     PIP_REQUIRE_VIRTUALENV="" $SYSTEM_PIP "$@"
 }
+export SYSTEM_PIP3=`which pip3`
+syspip3() {
+    PIP_REQUIRE_VIRTUALENV="" $SYSTEM_PIP3 "$@"
+}
 
 # virtualenvwrapper setup
 export WORKON_HOME=$HOME/.virtualenvs
