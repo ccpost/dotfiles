@@ -11,6 +11,14 @@ for f in /usr/local/etc/bash_completion.d/*; do
     fi
 done
 
+# Docker for Mac Bash completions
+DOCKER_ETC_PATH="/Applications/Docker.app/Contents/Resources/etc"
+if [[ -d $DOCKER_ETC_PATH ]]; then
+    for f in $DOCKER_ETC_PATH/*.bash-completion; do
+        source $f
+    done
+fi
+
 # Prompt customization
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
