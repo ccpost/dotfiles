@@ -32,6 +32,7 @@ alias dnsflush='sudo killall -HUP mDNSResponder'
 alias st='open -a sourcetree'
 alias finder='open -a finder'
 alias tf='terraform'
+alias bash-reload='echo "Re-sourcing ~/.bashrc..."; source ~/.bashrc'
 
 # pip / virtualenv interaction
 export PIP_REQUIRE_VIRTUALENV=true
