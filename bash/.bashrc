@@ -34,6 +34,9 @@ alias finder='open -a finder'
 alias tf='terraform'
 alias bash-reload='echo "Re-sourcing ~/.bashrc..."; source ~/.bashrc'
 
+# https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"
+
 # pip / virtualenv interaction
 export PIP_REQUIRE_VIRTUALENV=true
 export SYSTEM_PIP=`which pip`
