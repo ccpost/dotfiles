@@ -34,6 +34,10 @@ alias finder='open -a finder'
 alias tf='terraform'
 alias bash-reload='echo "Re-sourcing ~/.bashrc..."; source ~/.bashrc'
 
+function title {
+    echo -ne "\033]0;"$*"\007"
+}
+
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
 
@@ -59,3 +63,9 @@ alias yubi-add="ssh-add -l | grep $OPENSC_PKCS_LIB && ssh-add -e $OPENSC_PKCS_LI
 
 # Crazyflie development helpers
 alias tb='docker run --rm -it -e "HOST_CW_DIR=${PWD}" -e "CALLING_HOST_NAME=$(hostname)" -e "CALLING_UID"=$UID -e "CALLING_OS"=$(uname) -v ${PWD}:/tb-module -v ${HOME}/.ssh:/root/.ssh -v /var/run/docker.sock:/var/run/docker.sock bitcraze/toolbelt'
+
+# gitsome Docker image alias
+alias gitsome="docker run -ti --rm -v $(pwd):/src/ \
+    -v ${HOME}/.gitsomeconfig:/root/.gitsomeconfig \
+    -v ${HOME}/.gitconfig:/root/.gitconfig \
+    mariolet/gitsome"
