@@ -1,5 +1,13 @@
 {
-    "color_scheme": "Packages/Monokai Neue/Monokai-Neue.tmTheme",
-    "translate_tabs_to_spaces": true,
-    "rulers": [80, 120]
+	"color_scheme": "Packages/Monokai Neue/Monokai-Neue.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		120
+	],
+	"translate_tabs_to_spaces": true
 }
