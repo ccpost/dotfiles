@@ -13,6 +13,10 @@
 	smudge = git-lfs smudge -- %f
 	required = true
 
+# Command Aliases
+[alias]
+	edit-branch = "!git rebase -i $(git merge-base $1 HEAD) #"
+
 # Diffing / Merging
 [difftool]
 	prompt = false
