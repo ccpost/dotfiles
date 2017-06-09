@@ -1,5 +1,7 @@
 {
+	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/Monokai Neue/Monokai-Neue.tmTheme",
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -9,5 +11,7 @@
 		80,
 		120
 	],
+	"show_encoding": true,
+	"show_line_endings": true,
 	"translate_tabs_to_spaces": true
 }
