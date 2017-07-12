@@ -16,6 +16,7 @@
 # Command Aliases
 [alias]
 	edit-branch = "!git rebase -i $(git merge-base $1 HEAD) #"
+	difftool-branch = "!git difftool $(git merge-base $1 $2) $2 #"
 
 # Diffing / Merging
 [difftool]
