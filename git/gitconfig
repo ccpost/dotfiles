@@ -18,6 +18,12 @@
 	edit-branch = "!git rebase -i $(git merge-base ${1:-origin/develop} HEAD) #"
 	difftool-branch = "!git difftool $(git merge-base ${1:-origin/develop} ${2:-HEAD}) ${2:-HEAD} #"
 
+	# fork-point from: https://stackoverflow.com/a/4991675
+	fork-point = !bash -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-origin/develop}") <(git rev-list --first-parent "${2:-HEAD}") | head -1' -
+
+	# cp-branch based on: https://stackoverflow.com/questions/25886147/git-rebase-skip-merge-commits#comment40538184_25894618
+	cp-branch = "!git cherry-pick $(git rev-list --no-merges --first-parent --reverse $(git fork-point $1 $2)..$2) #"
+
 # Diffing / Merging
 [difftool]
 	prompt = false
