@@ -12,12 +12,12 @@ for f in /usr/local/etc/bash_completion.d/*; do
 done
 
 # Docker for Mac Bash completions
-DOCKER_ETC_PATH="/Applications/Docker.app/Contents/Resources/etc"
-if [[ -d $DOCKER_ETC_PATH ]]; then
-    for f in $DOCKER_ETC_PATH/*.bash-completion; do
-        source $f
-    done
-fi
+# DOCKER_ETC_PATH="/Applications/Docker.app/Contents/Resources/etc"
+# if [[ -d $DOCKER_ETC_PATH ]]; then
+#     for f in $DOCKER_ETC_PATH/*.bash-completion; do
+#         source $f
+#     done
+# fi
 
 # Prompt customization
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -55,7 +55,7 @@ syspip3() {
 # virtualenvwrapper setup
 export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Yubikey aliases
 OPENSC_PKCS_LIB="/usr/local/lib/opensc.pkcs11.so"
