@@ -4,6 +4,7 @@
 	email = chris@chrispost.com
 [core]
 	excludesfile = /Users/ccpost/.gitignore_global
+	editor = vim -c 'set textwidth=72'
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 
