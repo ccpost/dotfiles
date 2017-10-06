@@ -28,6 +28,9 @@
 	# Delete branch from local and origin in one command (WILL NOT WARN!)
 	del-all = "!git branch -D ${1} && git push --delete origin ${1} #"
 
+	# Simulate a `-s theirs` merge strategy, from: http://jeetworks.org/unconditionally-accepting-all-merging-in-changes-during-a-git-merge/
+	merge-theirs = "!git merge -s ours ${1} && git diff --binary ${1} | git apply -R --index && git commit -F .git/COMMIT_EDITMSG --amend #"
+
 # Diffing / Merging
 [difftool]
 	prompt = false
