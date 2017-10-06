@@ -9,7 +9,7 @@
 		"AutoDocstring",
 		"BracketHighlighter",
 		"DashDoc",
-		"DocBlockr",
+		"DoxyDoxygen",
 		"Git blame",
 		"Git Config",
 		"GitGutter",
