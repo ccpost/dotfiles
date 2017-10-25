@@ -26,6 +26,9 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM="auto"
 PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ "'
 
+# General shell / utility environment vairables
+export CLICOLOR=true
+
 # General command aliases
 alias vlc='"/Applications/VLC.app/Contents/MacOS/VLC"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
