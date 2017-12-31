@@ -60,6 +60,11 @@ export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/Devel
 # source /usr/local/bin/virtualenvwrapper.sh
 
+# Go config
+if [ -d "${HOME}/go/bin" ] ; then
+    export PATH="${HOME}/go/bin:${PATH}"
+fi
+
 # Yubikey aliases
 OPENSC_PKCS_LIB="/usr/local/lib/opensc.pkcs11.so"
 alias yubi-add="ssh-add -l | grep $OPENSC_PKCS_LIB && ssh-add -e $OPENSC_PKCS_LIB; ssh-add -s $OPENSC_PKCS_LIB"
