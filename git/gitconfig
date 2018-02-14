@@ -53,5 +53,7 @@
 	trustExitCode = true
 
 # Conditional Overrides
+[includeIf "gitdir:~/src/ravenops/"]
+	path = .gitconfig-rvn
 [includeIf "gitdir:~/src/rvn/"]
 	path = .gitconfig-rvn
