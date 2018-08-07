@@ -80,3 +80,6 @@ alias gitsome="docker run -ti --rm -v $(pwd):/src/ \
     -v ${HOME}/.gitsomeconfig:/root/.gitsomeconfig \
     -v ${HOME}/.gitconfig:/root/.gitconfig \
     mariolet/gitsome"
+
+# Use MySQL 5.7 binaries by default
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
