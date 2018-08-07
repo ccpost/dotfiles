@@ -63,8 +63,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 # source /usr/local/bin/virtualenvwrapper.sh
 
 # Go config
-if [ -d "${HOME}/go/bin" ] ; then
-    export PATH="${HOME}/go/bin:${PATH}"
+export GOPATH=$(go env GOPATH)
+if [ -d "${GOPATH}/bin" ] ; then
+    export PATH="${GOPATH}/bin:${PATH}"
 fi
 
 # Yubikey aliases
