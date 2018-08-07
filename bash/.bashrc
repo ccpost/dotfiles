@@ -36,6 +36,8 @@ alias st='open -a sourcetree'
 alias finder='open -a finder'
 alias tf='terraform'
 alias bash-reload='echo "Re-sourcing ~/.bashrc..."; source ~/.bashrc'
+alias clear-quicklook-cache='qlmanage -r cache'
+alias displays='system_profiler SPDisplaysDataType'
 
 function title {
     echo -ne "\033]0;"$*"\007"
