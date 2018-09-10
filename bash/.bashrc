@@ -83,3 +83,7 @@ alias gitsome="docker run -ti --rm -v $(pwd):/src/ \
 
 # Use MySQL 5.7 binaries by default
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# Extra nvm setup from Homebrew "Caveats"
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
