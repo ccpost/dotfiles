@@ -57,12 +57,15 @@
 	newNormal = green bold
 	newHighlight = green bold 22
 [color "diff"]
-	meta = yellow
+	meta = 11
 	frag = magenta bold
 	commit = yellow bold
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+	func = 146 bold
+[interactive]
+	diffFilter = diff-so-fancy --patch
 
 # Conditional Overrides
 [includeIf "gitdir:~/src/ravenops/"]
