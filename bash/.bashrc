@@ -1,3 +1,10 @@
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
+    [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+fi
+#### END FIG ENV VARIABLES ####
+
 # Bash settings
 HISTTIMEFORMAT="%d/%m/%y %T "
 HISTSIZE=5000
@@ -154,3 +161,12 @@ if command -v direnv > /dev/null; then
     eval "$(direnv hook bash)"
 fi
 
+
+source /Users/ccpost/.config/broot/launcher/bash/br
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
+    [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+fi
+#### END FIG ENV VARIABLES ####
