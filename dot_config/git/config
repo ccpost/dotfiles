@@ -3,12 +3,27 @@
 	name = Chris Post
 	email = chris@chrispost.com
 [core]
-	excludesfile = /Users/ccpost/.gitignore_global
 	editor = vim -c 'set textwidth=72'
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[commit]
+	template = /Users/ccpost/.stCommitMsg
+[grep]
+	lineNumber = true
+[rerere]
+	# https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67
+	enabled = true
+[push]
+	default = current
 
 # Git LFS
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# Command Aliases
 [alias]
 	edit-branch = "!git rebase -i $(git merge-base ${1:-origin/develop} HEAD) #"
 	difftool-branch = "!git difftool $(git merge-base ${1:-origin/develop} ${2:-HEAD}) ${2:-HEAD} #"
@@ -69,21 +84,6 @@
 
 # Conditional Overrides
 [includeIf "gitdir:~/src/ravenops/"]
-	path = .gitconfig-rvn
+	path = config-rvn
 [includeIf "gitdir:~/src/rvn/"]
-	path = .gitconfig-rvn
-[commit]
-	template = /Users/ccpost/.stCommitMsg
-[grep]
-	lineNumber = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-
-# https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67
-[rerere]
-	enabled = true
-[push]
-	default = current
+	path = config-rvn
