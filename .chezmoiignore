@@ -1,0 +1,5 @@
+# Ignore source repository files: metadata / documentation / etc.
+LICENSE
+README.md
+# Ignore old repository imported files.
+old/
