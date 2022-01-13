@@ -1,0 +1,13 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Distributed revision control system
+brew "git"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# Tool for managing your YubiKey configuration
+brew "ykman"
