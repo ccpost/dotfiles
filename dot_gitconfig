@@ -1,0 +1,89 @@
+# Core Personalization
+[user]
+	name = Chris Post
+	email = chris@chrispost.com
+[core]
+	excludesfile = /Users/ccpost/.gitignore_global
+	editor = vim -c 'set textwidth=72'
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+# Git LFS
+[alias]
+	edit-branch = "!git rebase -i $(git merge-base ${1:-origin/develop} HEAD) #"
+	difftool-branch = "!git difftool $(git merge-base ${1:-origin/develop} ${2:-HEAD}) ${2:-HEAD} #"
+
+	# fork-point from: https://stackoverflow.com/a/4991675
+	fork-point = !bash -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-origin/develop}") <(git rev-list --first-parent "${2:-HEAD}") | head -1' -
+
+	# cp-branch based on: https://stackoverflow.com/questions/25886147/git-rebase-skip-merge-commits#comment40538184_25894618
+	cp-branch = "!git cherry-pick $(git rev-list --no-merges --first-parent --reverse $(git fork-point $1 $2)..$2) #"
+
+	# Delete branch from local and origin in one command (WILL NOT WARN!)
+	del-all = "!git branch -D ${1} && git push --delete origin ${1} #"
+
+	# Simulate a `-s theirs` merge strategy, from: http://jeetworks.org/unconditionally-accepting-all-merging-in-changes-during-a-git-merge/
+	merge-theirs = "!git merge -s ours ${1} && git diff --binary ${1} | git apply -R --index && git commit -F .git/COMMIT_EDITMSG --amend #"
+
+# Diffing / Merging
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+# diff-so-fancy -> https://github.com/so-fancy/diff-so-fancy
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+	func = 146 bold
+[interactive]
+	diffFilter = diff-so-fancy --patch
+
+# Conditional Overrides
+[includeIf "gitdir:~/src/ravenops/"]
+	path = .gitconfig-rvn
+[includeIf "gitdir:~/src/rvn/"]
+	path = .gitconfig-rvn
+[commit]
+	template = /Users/ccpost/.stCommitMsg
+[grep]
+	lineNumber = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67
+[rerere]
+	enabled = true
+[push]
+	default = current
