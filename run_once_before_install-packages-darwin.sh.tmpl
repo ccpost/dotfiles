@@ -1,0 +1,16 @@
+{{- if (eq .chezmoi.os "darwin") -}}
+#!/usr/bin/env bash
+
+set -eux -o pipefail
+
+# Include the hash to make Chezmoi see a "change" to this script when the Brewfile changes and so it'll be re-run.
+# Brewfile hash: {{ include "dot_Brewfile" | sha256sum }}
+
+# To sync back new installed packages from the system, run:
+# brew bundle dump --global --force --describe
+# Then update Chezmoi's Brewfile using the normal `diff` / `add` mechanisms:
+# chezmoi add .Brewfile
+
+brew bundle install --no-lock --file={{ joinPath .chezmoi.sourceDir "dot_Brewfile" | quote }}
+
+{{ end -}}
