@@ -11,3 +11,15 @@ brew "git"
 brew "openssh"
 # Tool for managing your YubiKey configuration
 brew "ykman"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Application launcher and productivity software
+cask "alfred"
+# Allows switching between application windows
+cask "contexts"
+# Voice and text chat software
+cask "discord"
+# Web browser
+cask "google-chrome"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
