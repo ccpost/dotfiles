@@ -15,11 +15,15 @@ brew "ykman"
 cask "1password"
 # Application launcher and productivity software
 cask "alfred"
+# Menu bar icon organizer
+cask "bartender"
 # Allows switching between application windows
 cask "contexts"
 # Voice and text chat software
 cask "discord"
 # Web browser
 cask "google-chrome"
+# System monitoring app
+cask "istat-menus"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
