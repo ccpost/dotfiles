@@ -21,9 +21,19 @@ cask "bartender"
 cask "contexts"
 # Voice and text chat software
 cask "discord"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
+# Calendar software
+cask "fantastical"
 # Web browser
 cask "google-chrome"
 # System monitoring app
 cask "istat-menus"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Team communication and collaboration software
+cask "slack"
+# Email client
+cask "superhuman"
+# Twitter client
+cask "tweetbot"
