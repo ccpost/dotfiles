@@ -29,6 +29,10 @@ cask "fantastical"
 cask "google-chrome"
 # System monitoring app
 cask "istat-menus"
+# Sound clear in online meetings
+cask "krisp"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Team communication and collaboration software
