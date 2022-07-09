@@ -2,10 +2,14 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Modern replacement for 'ls'
+brew "exa"
 # Distributed revision control system
 brew "git"
 # OpenBSD freely-licensed SSH connectivity tools
