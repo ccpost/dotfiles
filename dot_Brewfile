@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
@@ -41,3 +42,5 @@ cask "slack"
 cask "superhuman"
 # Twitter client
 cask "tweetbot"
+# Video communication and virtual meeting platform
+cask "zoom"
