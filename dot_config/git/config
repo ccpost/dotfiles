@@ -81,6 +81,9 @@
 	func = 146 bold
 [interactive]
 	diffFilter = diff-so-fancy --patch
+# Workaround for `git add --interactive` bug: https://github.com/so-fancy/diff-so-fancy/issues/437#issuecomment-1169157237
+[add "interactive"]
+	useBuiltin = false
 
 # Conditional Overrides
 [includeIf "gitdir:~/src/ravenops/"]
