@@ -50,6 +50,8 @@ cask "microsoft-teams"
 cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
+# Text editor for code, markup and prose
+cask "sublime-text"
 # Email client
 cask "superhuman"
 # Twitter client
