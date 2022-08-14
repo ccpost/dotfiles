@@ -1,6 +1,13 @@
 {
 	"always_show_minimap_viewport": true,
+	"caret_style": "phase",
 	// "color_scheme": "Packages/Monokai Neue/Monokai-Neue.tmTheme",
+	"draw_white_space": [
+		"selection",
+		"trailing",
+		"isolated",
+		"leading_mixed",
+	],
 	"font_size": 12,
 	"highlight_line": true,
 	"rulers":
