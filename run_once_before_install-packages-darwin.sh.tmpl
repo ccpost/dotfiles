@@ -13,4 +13,4 @@ set -eux -o pipefail
 
 brew bundle install --no-lock --file={{ joinPath .chezmoi.sourceDir "dot_Brewfile" | quote }}
 
-{{ end -}}
+{{- end -}}

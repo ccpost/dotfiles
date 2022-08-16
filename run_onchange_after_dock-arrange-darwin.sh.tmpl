@@ -1,0 +1,38 @@
+{{- if (eq .chezmoi.os "darwin") -}}
+#!/usr/bin/env bash
+
+set -eux -o pipefail
+
+# Remove all existing Dock items; they'll be re-added in order.
+dockutil --list | awk -F\t '{print "dockutil --remove \""$2"\" --no-restart"}' | sh
+
+# Add persistent Dock applications in left-to-right order.
+cat << EOF | xargs -L 1 -I {} dockutil --no-restart --add '{}'
+/System/Applications/Launchpad.app
+/System/Applications/System Preferences.app
+/System/Applications/Music.app
+/Applications/Google Chrome.app
+/Applications/Fantastical.app
+/Applications/Superhuman.app
+/Applications/Discord.app
+/Applications/Slack.app
+/System/Applications/Messages.app
+/Applications/Tweetbot.app
+/Applications/Stashpad.app
+/Applications/Warp.app
+/Applications/Sublime Text.app
+/Applications/Fork.app
+/Applications/GoLand.app
+EOF
+
+# Add folders in left-to-right order.
+# The fresh-installed macOS Downloads folder is shown as: --view fan --display stack --sort dateadded
+# Folders manually dragged into the Dock are shown as: --view auto --display stack --sort name
+cat << EOF | xargs -L 1 -I {} dockutil --no-restart --add '{}' --view fan --display stack --sort dateadded
+~/Downloads
+EOF
+
+# Restart the Dock to re-read settings.
+killall Dock
+
+{{- end -}}

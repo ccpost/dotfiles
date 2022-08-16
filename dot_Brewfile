@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "hpedrorodrigues/tools"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -31,6 +32,8 @@ cask "bartender"
 cask "contexts"
 # Voice and text chat software
 cask "discord"
+# Command-line utility for managing macOS dock items
+cask "dockutil"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Calendar software
