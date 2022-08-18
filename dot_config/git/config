@@ -1,7 +1,7 @@
 # Core Personalization
-[user]
-	name = Chris Post
-	email = chris@chrispost.com
+[include]
+	path = config-user
+
 [core]
 	editor = vim -c 'set textwidth=72'
 [commit]
