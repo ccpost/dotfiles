@@ -32,6 +32,8 @@ cask "bartender"
 cask "contexts"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Command-line utility for managing macOS dock items
 cask "dockutil"
 # Client for the Dropbox cloud storage service
