@@ -30,6 +30,8 @@ cask "alfred"
 cask "bartender"
 # Allows switching between application windows
 cask "contexts"
+# Disk space visualizer
+cask "daisydisk"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
