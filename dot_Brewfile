@@ -8,16 +8,22 @@ tap "hpedrorodrigues/tools"
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Modern replacement for 'ls'
 brew "exa"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # Tool for managing your YubiKey configuration
