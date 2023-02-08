@@ -1,0 +1,10 @@
+# Most of the Sublime directories are machine-specific or local session caches.
+Installed Packages
+Installed Packages/**
+Lib
+Lib/**
+Local
+Local/**
+Log
+Log/**
+Packages/User/Package Control.user-ca-bundle
