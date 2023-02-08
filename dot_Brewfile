@@ -4,6 +4,8 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "hpedrorodrigues/tools"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -26,6 +28,10 @@ brew "go"
 brew "jq"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Thin wrapper for Terraform e.g. for locking state
+brew "terragrunt"
 # Tool for managing your YubiKey configuration
 brew "ykman"
 # Password manager that keeps all passwords secure behind one password
