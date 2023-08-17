@@ -78,8 +78,6 @@ cask "steam"
 cask "sublime-text"
 # Email client
 cask "superhuman"
-# Twitter client
-cask "tweetbot"
 # Rust-based terminal
 cask "warp"
 # Video communication and virtual meeting platform
