@@ -4,6 +4,7 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "hpedrorodrigues/tools"
+tap "mike-engel/jwt-cli"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -34,6 +35,8 @@ brew "terraform"
 brew "terragrunt"
 # Tool for managing your YubiKey configuration
 brew "ykman"
+# Super fast CLI tool to decode and encode JWTs built in Rust
+brew "mike-engel/jwt-cli/jwt-cli"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application launcher and productivity software
