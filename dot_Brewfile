@@ -1,8 +1,5 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "hpedrorodrigues/tools"
 tap "mike-engel/jwt-cli"
 # Official Amazon AWS command-line interface
