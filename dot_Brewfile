@@ -53,6 +53,8 @@ cask "docker"
 cask "dropbox"
 # Calendar software
 cask "fantastical"
+# Web browser
+cask "firefox"
 # GIT client
 cask "fork"
 # Go (golang) IDE
