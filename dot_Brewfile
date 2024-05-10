@@ -23,6 +23,8 @@ brew "git"
 brew "git-lfs"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # OpenBSD freely-licensed SSH connectivity tools
