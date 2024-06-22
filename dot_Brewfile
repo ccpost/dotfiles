@@ -85,6 +85,8 @@ cask "steam"
 cask "sublime-text"
 # Email client
 cask "superhuman"
+# Configurable document editor that supports Markdown
+cask "typora"
 # Rust-based terminal
 cask "warp"
 # Video communication and virtual meeting platform
