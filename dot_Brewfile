@@ -68,7 +68,7 @@ cask "google-chrome"
 # System monitoring app
 cask "istat-menus"
 # Software for Logitech devices
-cask "logi-options-plus"
+cask "logi-options+"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
