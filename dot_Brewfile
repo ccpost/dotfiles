@@ -31,10 +31,6 @@ brew "jq"
 brew "mise"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
-# Tool to build, change, and version infrastructure
-brew "terraform"
-# Thin wrapper for Terraform e.g. for locking state
-brew "terragrunt"
 # Tool for managing your YubiKey configuration
 brew "ykman"
 # Super fast CLI tool to decode and encode JWTs built in Rust
