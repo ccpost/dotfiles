@@ -27,6 +27,8 @@ brew "go"
 brew "graphviz"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # Tool to build, change, and version infrastructure
