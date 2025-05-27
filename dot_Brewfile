@@ -39,6 +39,10 @@ brew "mike-engel/jwt-cli/jwt-cli"
 cask "1password"
 # Application launcher and productivity software
 cask "alfred"
+# Multi-track audio editor and recorder
+cask "audacity"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
 cask "bambu-studio"
 # Menu bar icon organiser
@@ -71,6 +75,8 @@ cask "logi-options+"
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Tool for the Realm Database and Realm Platform
+cask "mongodb-realm-studio"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -91,5 +97,7 @@ cask "typora"
 cask "vlc"
 # Rust-based terminal
 cask "warp"
+# Network protocol analyzer
+cask "wireshark"
 # Video communication and virtual meeting platform
 cask "zoom"
